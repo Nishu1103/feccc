@@ -1,6 +1,6 @@
 import "./landing.css";
 // import News from "../News/News";
-const LandingPage = () => {
+export default function (){
     return (
         <>
         <div className="landing-page">
@@ -14,5 +14,3 @@ const LandingPage = () => {
         </>
     );
 };
-
-export default LandingPage;

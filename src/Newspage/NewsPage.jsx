@@ -1,8 +1,9 @@
 import { useEffect, useRef } from 'react';
 import Tickertap from './tickertap';
-import News from '../component/News/News';
+import News from '../Component/News/News';
 
-const NewsPage = () => {
+
+export default function  NewsPage ()  {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -91,6 +92,4 @@ const NewsPage = () => {
     </div>
     </>
   );
-};
-
-export default NewsPage;
+}

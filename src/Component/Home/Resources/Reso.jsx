@@ -1,5 +1,5 @@
 import "./Reso.css";
-const Resources = () => {
+export default function ResourcesHome ()  {
   return (
     <>
       <div className="resources-Container">
@@ -40,38 +40,12 @@ const Resources = () => {
                 Bloomberg - Business news, data, and analysis.
               </a>
             </li>
-            <li>
-              <img
-                src="./images/reso.jpg"
-                alt="reso"
-              />
-              <a href="https://www.cnbc.com/">
-                CNBC - Business news and financial information.
-              </a>
-            </li>
-            <li>
-              <img
-                src="./images/reso.jpg"
-                alt="reso"
-              />
-              <a href="https://www.wsj.com/">
-                The Wall Street Journal - Business news and analysis.
-              </a>
-            </li>
-
-            <li>
-              <img
-                src="./images/reso.jpg"
-                alt="reso"
-              />
-              <a href="https://www.barrons.com/">
-                Barron's - Financial news and analysis.
-              </a>
-            </li>
+             
+             
           </ul>
+          <a href="/resources">read more</a>
         </div>
       </div>
     </>
   );
 };
-export default Resources;

@@ -1,7 +1,7 @@
 
 import './team.css';
 
-const Team = () => {
+export default function Team() {
   const teamData = {
     groupPhoto: './images/text.png',
     teams: [
@@ -169,6 +169,4 @@ const Team = () => {
       ))}
     </div>
   );
-};
-
-export default Team;
+}

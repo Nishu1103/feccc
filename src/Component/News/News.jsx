@@ -1,8 +1,7 @@
 import  { useEffect, useState } from 'react';
-import './News.css';
-// import NewsPage from '../../newspage/NewsPage';
+import './news.css';
 
-const News = () => {
+export default function News() {
   const [news, setNews] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -73,6 +72,4 @@ const News = () => {
     </div>
     </>
   );
-};
-
-export default News;
+}

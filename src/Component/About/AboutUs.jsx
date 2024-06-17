@@ -18,7 +18,7 @@ const responsive = {
   }
 };
 
-const AboutUs = () => {
+export default function AboutUs(){
   const images = [
     { src: "./images/abc.png", alt: " " },
     { src: "./images/ab.png", alt: " " },
@@ -36,7 +36,7 @@ const AboutUs = () => {
       <p style={{color:"black"}}>
         Welcome to [Organization Name], where our mission is to fight hunger and
         feed hope. We believe that everyone deserves access to nutritious food, and
-        we're committed to making that a reality for those in need. Our dedicated team
+        were committed to making that a reality for those in need. Our dedicated team
         works tirelessly to collect, organize, and distribute food donations to
         communities across the region.
       </p>
@@ -76,6 +76,6 @@ const AboutUs = () => {
       </p>
     </div>
   );
-};
+}
 
-export default AboutUs;
+

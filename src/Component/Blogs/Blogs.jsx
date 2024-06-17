@@ -1,6 +1,6 @@
-import "./Blogs.css";
+import "./blogs.css";
 
-const Blogs = () => {
+export default function Blogs() {
     return (
         <>
   <section className="title container">
@@ -137,4 +137,3 @@ const Blogs = () => {
 
     );
 }
-export default Blogs;

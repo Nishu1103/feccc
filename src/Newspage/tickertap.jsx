@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const Tickertap = () => {
+export default function  Tickertap (){
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -57,6 +57,5 @@ const Tickertap = () => {
        
     </>
   );
-};
+}
 
-export default Tickertap;

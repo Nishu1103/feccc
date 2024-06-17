@@ -1,6 +1,6 @@
 import "./footer.css";
 
-const Footer = () => {
+export default function Footer() {
     return (
         <>
             
@@ -10,7 +10,7 @@ const Footer = () => {
                         <div className="footer-column footer-column-large">
                             <h6>About</h6>
                             <p className="text-justify">
-                                We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
+                                We are a team of college students working on this project like its our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
                                 </p>
                             
                         </div>
@@ -57,6 +57,5 @@ const Footer = () => {
             </footer>
         </>
     );
-};
+}
 
-export default Footer;

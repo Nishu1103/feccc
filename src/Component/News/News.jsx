@@ -44,9 +44,9 @@ export default function News() {
     <>
     {/* <NewsPage/> */}
     
-    <div className="news-container">
-      <h1>Big Headlines</h1>
-      <div className="big-headlines">
+    <div className="news-container" >
+      <h1 style={{margin:"10px", padding:"10px"}}>Big Headlines</h1>
+      <div className="big-headlines" style={{margin:"10px", padding:"10px"}}>
         {bigHeadlines.map((article, index) => (
           <div key={index} className="big-headline">
             <h2>{article.headline}</h2>
@@ -57,8 +57,8 @@ export default function News() {
           </div>
         ))}
       </div>
-      <h1>Latest Headlines</h1>
-      <div className="latest-headlines">
+      <h1 style={{margin:"10px", padding:"10px"}}>Latest Headlines</h1>
+      <div className="latest-headlines" style={{margin:"10px", padding:"10px"}}>
         {latestHeadlines.map((article, index) => (
           <div key={index} className="latest-headline">
             <h3>{article.headline}</h3>

@@ -3,7 +3,7 @@ import "./blogs.css";
 export default function Blogs() {
     return (
         <>
-  <section className="title container">
+  <section className="title container" style={{marginTop:"60px"}}>
     <div className="row">
       <div className="col-md-12">
         <h1>Blogs </h1>

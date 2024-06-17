@@ -1,6 +1,6 @@
 import News from "../News/News";
 import LandingPage from "./Landingpage";
-// import Resources from "../Resources/Reso";
+import Testimonial from "./testimonial/testmonial";
 import ResourcesHome from "./Resources/Reso";
 export default function  Home() {
     return (
@@ -8,6 +8,7 @@ export default function  Home() {
         <LandingPage />
         <News />
         <ResourcesHome />
+        <Testimonial />
         </>
     );
 }

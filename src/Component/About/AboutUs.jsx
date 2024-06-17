@@ -18,6 +18,25 @@ const responsive = {
   }
 };
 
+
+const visionPoints = [
+  {
+      text: "At [Organization Name], we envision a world where everyone has access to nutritious food. We believe that food is a basic human right and that no one should go hungry.",
+      image: "./images/a.png"
+  },
+  {
+      text: "Our goal is to create a community where all individuals have the resources they need to thrive.",
+      image: "./images/aa.png"
+  },
+  {
+      text: "We are committed to fighting hunger and food insecurity through our programs and services.",
+      image: "./images/ab.png"
+  },
+  {
+      text: "By providing food assistance, education, and advocacy, we work to address the root causes of hunger and build a more equitable society.",
+      image: "./images/abc.png"
+  }
+];
 export default function AboutUs(){
   const images = [
     { src: "./images/abc.png", alt: " " },
@@ -26,10 +45,15 @@ export default function AboutUs(){
   ];
 
   return (
+    <>
+    
+    
+    
     <div className="about-container" style={{top:"50px",
-    // position:"relative",
+    position:"relative",
     textAlign:"center",
     padding:"20px",
+    
     
     }}>
       <h1 style={{color:"black"}}>About Us</h1>
@@ -75,6 +99,21 @@ export default function AboutUs(){
         no one goes hungry.
       </p>
     </div>
+
+
+    <div className="ourvision">
+            <h1>Our Vision</h1>
+            <div className="vision-content">
+                {visionPoints.map((point, index) => (
+                    <div className="vision-point" key={index} style={{ flexDirection: index % 2 === 0 ? 'row' : 'row-reverse' }}>
+                        <img src={point.image} alt="Vision" />
+                        <p>{point.text}</p>
+                    </div>
+                ))}
+            </div>
+        </div>
+    </>
+
   );
 }
 

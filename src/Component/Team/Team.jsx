@@ -3,7 +3,7 @@ import './team.css';
 
 export default function Team() {
   const teamData = {
-    groupPhoto: './images/text.png',
+    groupPhoto: './images/teams.png',
     teams: [
       {
         name: 'Finance Team',
@@ -111,28 +111,22 @@ export default function Team() {
         name: 'Tech Team',
         members: [
           {
-            name: 'Charlie Brown',
-            image: './images/abc.png',
+            name: 'Nishant Kumawat',
+            image: './contact/Nishant.jpg',
             linkedin: 'https://www.linkedin.com/in/charlie-brown',
             facebook: 'https://www.facebook.com/charlie.brown'
           },
           {
-            name: 'Sarah Wilson',
-            image: './images/a.png',
-            linkedin: 'https://www.linkedin.com/in/sarah-wilson',
-            facebook: 'https://www.facebook.com/sarah.wilson'
+            name: 'Chirag Jindal',
+            image: './contact/Chirag.jpeg',
+            linkedin: 'https://www.linkedin.com/in/chirag-jindal-456682223/',
+            facebook: 'https://www.facebook.com/abhimanyu.jindal.167/'
           },
           {
-            name: 'Charlie Brown',
-            image: './images/abc.png',
-            linkedin: 'https://www.linkedin.com/in/charlie-brown',
-            facebook: 'https://www.facebook.com/charlie.brown'
-          },
-          {
-            name: 'Sarah Wilson',
-            image: './images/a.png',
-            linkedin: 'https://www.linkedin.com/in/sarah-wilson',
-            facebook: 'https://www.facebook.com/sarah.wilson'
+            name: 'Kumar Ravi',
+            image: './contact/KumarRavi.jpg',
+            linkedin: 'https://www.linkedin.com/in/kumar-ravi-a9391a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            facebook: 'https://www.facebook.com/kumarravi.000'
           }
            
         ]
@@ -159,7 +153,7 @@ export default function Team() {
                     LinkedIn
                   </a>
                   <a href={member.facebook} target="_blank" rel="noopener noreferrer">
-                    Facebook
+                    Instagram
                   </a>
                 </div>
               </div>

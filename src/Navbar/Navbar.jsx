@@ -42,7 +42,16 @@ export default function  Navbar() {
           <a href="/resources">Resources</a>
         </li>
       </ul>
-      <h1 className="logo">Navbar</h1>
+      <h1 className="logo">
+      <img src="images/logo.png" style={{
+        width:"70px",
+        height:"70px",
+        // padding:"10px"
+        margin:"-10px"
+
+      
+      }} alt="Logo" />
+      </h1>
     </div>
   </nav>
 </>

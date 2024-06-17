@@ -24,12 +24,13 @@
 
 .navbar{
     box-shadow: 0px 5px 10px 0px #aaa;
-    /* position: fixed; */
+    position: fixed;
     width: 100%;
     background: #fff;
     color: #000;
     opacity: 0.85;
     z-index: 100;
+    top: 0px;
 }
 
 .navbar-container{
@@ -68,6 +69,8 @@
 @media (max-width: 768px){
     .navbar{
         opacity: 0.95;
+        position: fixed;
+        top: 0px;
     }
 
     .navbar-container input[type="checkbox"],
@@ -136,11 +139,12 @@
         transform: translate(-150%);
         display: flex;
         flex-direction: column;
-        margin-left: -40px;
+        margin-left: -60px;
         padding-left: 40px;
         transition: transform 0.5s ease-in-out;
         box-shadow:  5px 0px 10px 0px #aaa;
         overflow: scroll;
+        margin-top: -20px;
     }
 
     .navbar .menu-items li{

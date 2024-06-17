@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import Tickertap from './tickertap';
 import News from '../Component/News/News';
+import "./news.css"
 
 
 export default function  NewsPage ()  {
@@ -48,7 +49,8 @@ export default function  NewsPage ()  {
   return (
     <>
     <div className="newpage" style={{
-      position:"relative"
+      position:"relative",
+      marginTop:"70px"
     }}>
 
 
@@ -65,10 +67,10 @@ export default function  NewsPage ()  {
 
     }}>
         <div className="textstock" style={{
-            width:"40%",
+            width:"80%",
             padding:"20px",
             textAlign:"center",
-            border:"1px solid #ccc",
+            // border:"1px solid #ccc",
             borderRadius:"5px"
             
         }}>

@@ -16,7 +16,6 @@ function App() {
     <>
       <Navbar />
       <Routes>
-      
       <Route index path="/" element={<Home />} />
       <Route path="/team" element={<Team />} />
         <Route path="/news" element={<NewsPage />} />

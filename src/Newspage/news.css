@@ -1,0 +1,13 @@
+@media (max-width:768px) {
+    .stocktricker{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+@media (min-width:768px) {
+    .textstock{
+        width: 100%;
+    }
+    
+}

@@ -26,3 +26,40 @@
     bottom: -30px;
   }
   
+
+  .ourvision {
+    text-align: center;
+    color: black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.ourvision h1 {
+    margin-bottom: 20px;
+}
+
+.vision-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vision-point {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    width: 80%;
+}
+
+.vision-point img {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+}
+
+.vision-point p {
+    max-width: 600px;
+    margin: 10px;
+    text-align: left;
+}

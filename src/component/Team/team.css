@@ -1,0 +1,118 @@
+.team-container {
+    width: 90%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    padding-top: 40px;
+  }
+  
+  .group-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 40px;
+  }
+  
+  .team-section {
+    margin-bottom: 40px;
+  }
+  
+  .team-section h2 {
+    font-size: 2em;
+    color: #333;
+
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .team-member {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+    box-sizing: border-box;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    text-align: center;
+    position: relative; 
+    /* transition: transform 0.3s, box-shadow 0.3s; */
+  }
+  
+  .team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-member:hover::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: olive;  
+    z-index: -1;  
+    border-radius: 10px 0 0 10px;  
+  }
+  
+  .team-member:hover img {
+    width: 100%;  
+    height: auto; 
+    border-radius: 10px; 
+  }
+  
+  .team-member img {
+    width: auto;  
+    height: 70%;  
+    border-radius: 50%;  
+    transition: width 0.3s;  
+  }
+  .member-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    /* transition: transform 0.3s; */
+  }
+  
+  .team-member h3 {
+    margin: 10px 0;
+    font-size: 1.5em;
+    color: #000;
+  }
+  
+  .social-links a {
+    display: inline-block;
+    margin: 5px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1em;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .team-member {
+      flex: 1 1 calc(50% - 20px);
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .team-member {
+      flex: 1 1 calc(100% - 20px);
+      max-width: calc(100% - 20px);
+    }
+  }
+  

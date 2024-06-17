@@ -1,0 +1,131 @@
+/* General styles for the News component */
+.news-container {
+    width: 80%;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Section titles */
+  .news-container h1 {
+    font-size: 2em;
+    color: #000;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the big headlines section */
+  .big-headlines {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .big-headline {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .big-headline:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .big-headline h2 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .big-headline img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .big-headline p {
+    margin: 0 0 10px;
+    font-size: 1em;
+    color: #000;
+  }
+  
+  .big-headline a {
+    color: #007bff;
+    text-decoration: none;
+    align-self: flex-start;
+  }
+  
+  .big-headline a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Styles for the latest headlines section */
+  .latest-headlines {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .latest-headline {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 10px; */
+    padding: 5px;
+    /* border: 1px solid #ddd; */
+    /* background-color: #fff; */
+    border-radius: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .latest-headline:hover {
+    background-color: #f1f1f1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .latest-headline h3 {
+    margin: 0 0 10px;
+    font-size: 1rem;
+    color: #000;
+  }
+  
+  .latest-headline img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .latest-headline p {
+    margin: 0 0 10px;
+    font-size: 0.9em;
+    color: #000;
+  }
+  
+  .latest-headline a {
+    color: #007bff;
+    text-decoration: none;
+    align-self: flex-start;
+  }
+  
+  .latest-headline a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Utility styles for loading and no news available */
+  .loading, .no-news {
+    height: 70vh;
+    
+    text-align: center;
+    font-size: 1.2em;
+    color: #000;
+    margin: 20px 0;
+  }
+  

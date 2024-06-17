@@ -1,0 +1,146 @@
+/* Global container styling */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Title section styling */
+  .title h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .title .seperator {
+    width: 50px;
+    height: 2px;
+    background-color: #0073e6;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+  
+  .title p {
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+  }
+  
+  /* Blog item styling */
+  .item {
+    margin-bottom: 30px;
+  }
+  
+  .item-in {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .item-in:hover {
+    transform: translateY(-5px);
+  }
+  
+  .item-in h4 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .item-in .seperator {
+    width: 50px;
+    height: 2px;
+    background-color: #0073e6;
+    margin-bottom: 10px;
+  }
+  
+  .item-in p {
+    font-size: 1em;
+    color: black;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .item-in a {
+    text-decoration: none;
+    color: #0073e6;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+  }
+  
+  .item-in a i {
+    margin-left: 5px;
+  }
+  
+  /* Icon styling */
+  .icon {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .icon svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+  }
+  
+  .icon-topic {
+    font-size: 1em;
+    color: #777;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .item-in {
+      padding: 15px;
+    }
+  
+    .item-in h4 {
+      font-size: 1.3em;
+    }
+  
+    .item-in p {
+      font-size: 0.9em;
+    }
+  
+    .icon-topic {
+      font-size: 0.9em;
+    }
+  
+    .item {
+      margin-bottom: 20px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .title h1 {
+      font-size: 2em;
+    }
+  
+    .title p {
+      font-size: 1em;
+    }
+  
+    .item-in {
+      padding: 10px;
+    }
+  
+    .item-in h4 {
+      font-size: 1.2em;
+    }
+  
+    .item-in p {
+      font-size: 0.8em;
+    }
+  
+    .icon-topic {
+      font-size: 0.8em;
+    }
+  }
+  

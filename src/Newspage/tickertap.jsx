@@ -24,6 +24,8 @@ export default function  Tickertap (){
       isTransparent: false,
       displayMode: "compact",
       locale: "en",
+      width:"80%",
+      height:"100%",
     });
 
     if (containerRef.current) {

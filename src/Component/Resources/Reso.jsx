@@ -2,7 +2,7 @@ import "./Reso.css";
 export default function Resources() {
   return (
     <>
-      <div className="resources-Container">
+      <div className="resources-Container" style={{border:"solid black"}}>
         <div className="main-reso" style={{display:"flex !important"}}>
           <div className="reso-text">
             <h1>Resources</h1>
@@ -65,7 +65,7 @@ export default function Resources() {
                 alt="reso"
               />
               <a href="https://www.barrons.com/">
-                Barron's - Financial news and analysis.
+                Barrons - Financial news and analysis.
               </a>
             </li>
           </ul>
@@ -73,4 +73,4 @@ export default function Resources() {
       </div>
     </>
   );
-};
+}

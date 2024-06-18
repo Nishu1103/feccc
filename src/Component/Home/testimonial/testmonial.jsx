@@ -24,26 +24,41 @@ const testimonials = [
 
 const Testimonial = () => {
   const settings = {
+    className: "center",
+    centerMode: true,
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    // width: "500px",
     autoplaySpeed: 3000,
   };
 
   return (
-    <div className="testimonial-slider" style={{padding:"10px", margin:"10px"}}>
+    <div className="testimonial-slider" style={{padding:"20px", margin:"10px"}}>
         <div className="text">
-            <h1>Our Governor</h1>
+            <h1 style={{
+                textAlign: "center",
+                padding: "20px",
+                color: "black",
+                fontSize: "40px",
+                fontWeight: "bold",
+                fontFamily: "sans-serif",
+                textTransform: "uppercase",
+                letterSpacing: "2px",
+                marginBottom: "20px",
+                marginTop: "20px",
+
+            }}>Our Governor</h1>
         </div>
-      <Slider {...settings} style={{ dispaly: "flex"
+      <Slider {...settings} style={{ dispaly: "flex", 
         
        }}>
         {testimonials.map((testimonial, index) => (
           <div key={index} className="testimonial">
-            <div className="hhh" style={{display:"flex",justifyContent: "space-between",
+            <div className="hhh" style={{display:"flex" ,justifyContent:"space-around"
             }}>
               <div className="imgg">
                 <img src={testimonial.image} alt={testimonial.name} />

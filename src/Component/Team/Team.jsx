@@ -1,4 +1,3 @@
-
 import './team.css';
 
 export default function Team() {
@@ -8,6 +7,7 @@ export default function Team() {
       {
         name: 'Finance Team',
         members: [
+
           {
             name: 'Divyansh Gupta',
             image: './contact/Divyansh.webp',
@@ -35,12 +35,6 @@ export default function Team() {
           {
             name: 'Aviral Singh',
             image: './contact/aviralsingh.webp',
-            linkedin: 'https://www.linkedin.com/in/david-johnson',
-            facebook: 'https://www.facebook.com/david.johnson'
-          },
-          {
-            name: 'Jai jain',
-            image: './contact/jai.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
@@ -157,7 +151,7 @@ export default function Team() {
                     LinkedIn
                   </a>
                   <a href={member.facebook} target="_blank" rel="noopener noreferrer">
-                    Instagram
+                    Facebook
                   </a>
                 </div>
               </div>

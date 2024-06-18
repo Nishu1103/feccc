@@ -8,14 +8,14 @@ export default function Footer() {
                 <div className="footer-container">
                     <div className="footer-row">
                         <div className="footer-column footer-column-large">
-                            <h6>About</h6>
+                            <h3>About</h3>
                             <p className="text-justify">
                                 We are a team of college students working on this project like its our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
                                 </p>
                             
                         </div>
                         <div className="footer-column footer-column-small">
-                            <h6>Categories</h6>
+                            <h3>Categories</h3>
                             <ul className="footer-links">
                                 <li><a href="#">FINANCE</a></li>
                                 <li><a href="#">Stock Market</a></li>
@@ -24,7 +24,7 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div className="footer-column footer-column-small">
-                            <h6>Quick Links</h6>
+                            <h3>Quick Links</h3>
                             <ul className="footer-links">
                                 <li><a href="/about">About Us</a></li>
                                 <li><a href="/contact">Contact Us</a></li>

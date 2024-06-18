@@ -33,13 +33,13 @@ export default function  Navbar() {
           <a href="/blogs">Blogs</a>
         </li>
         <li>
-          <a href="/team">team</a>
-        </li>
-        <li>
-          <a href="/contact">Contact</a>
+          <a href="/team">Team</a>
         </li>
         <li>
           <a href="/resources">Resources</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
         </li>
       </ul>
       <h1 className="logo">
@@ -47,7 +47,7 @@ export default function  Navbar() {
         width:"70px",
         height:"70px",
         // padding:"10px"
-        margin:"-10px"
+        margin:"-9px"
 
       
       }} alt="Logo" />

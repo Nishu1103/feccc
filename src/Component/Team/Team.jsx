@@ -9,99 +9,103 @@ export default function Team() {
         name: 'Finance Team',
         members: [
           {
-            name: 'Alice Smith',
-            image: './images/a.png',
+            name: 'Divyansh Gupta',
+            image: './contact/Divyansh.webp',
             linkedin: 'https://www.linkedin.com/in/alice-smith',
             facebook: 'https://www.facebook.com/alice.smith'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Ketul Sagar',
+            image: './contact/Ketul_Sagar.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Aman gupta ',
+            image: './contact/AmanGupta.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Jagrut Karnavat ',
+            image: './contact/Divysh.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Aviral Singh',
+            image: './contact/aviralsingh.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Jai jain',
+            image: './contact/jai.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Riya Salunkhe',
+            image: './contact/RiyaSalunkhe.webp',
+            linkedin: 'https://www.linkedin.com/in/david-johnson',
+            facebook: 'https://www.facebook.com/david.johnson'
+          },
+          {
+            name: 'Shriyansh asati',
+            image: './contact/Diyansh.webp',
+            linkedin: 'https://www.linkedin.com/in/david-johnson',
+            facebook: 'https://www.facebook.com/david.johnson'
+          },
+          {
+            name: 'Pranav Senthilkumar',
+            image: './contact/PranavSenthilkumar.webp',
+            linkedin: 'https://www.linkedin.com/in/david-johnson',
+            facebook: 'https://www.facebook.com/david.johnson'
+          },
+          {
+            name: 'Shivee Gupta',
+            image: './contact/ShiveeGupta.webp',
+            linkedin: 'https://www.linkedin.com/in/david-johnson',
+            facebook: 'https://www.facebook.com/david.johnson'
+          },
+          {
+            name: 'Ritabrata Bharati',
+            image: './contact/Ritabrata.webp',
+            linkedin: 'https://www.linkedin.com/in/david-johnson',
+            facebook: 'https://www.facebook.com/david.johnson'
+          },
+          {
+            name: 'Saurabh Raj',
+            image: './contact/SaurabhRaj.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           }
-          
-          // Add more finance team 
         ]
       },
       {
         name: 'Branding and Strategy Team',
         members: [
           {
-            name: 'Bob Johnson',
-            image: './images/aaa.png',
+            name: 'Jatain Kumar ',
+            image: './contact/Divyans.webp',
             linkedin: 'https://www.linkedin.com/in/bob-johnson',
             facebook: 'https://www.facebook.com/bob.johnson'
           },
           {
-            name: 'Emily Clark',
-            image: './images/aa.png',
+            name: 'Ashwini Raj',
+            image: './contact/Ashwini_Raj.webp',
             linkedin: 'https://www.linkedin.com/in/emily-clark',
             facebook: 'https://www.facebook.com/emily.clark'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Palak Agrawal ',
+            image: './contact/PalakAgrawal.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           },
           {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
-            linkedin: 'https://www.linkedin.com/in/david-johnson',
-            facebook: 'https://www.facebook.com/david.johnson'
-          },
-          {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
-            linkedin: 'https://www.linkedin.com/in/david-johnson',
-            facebook: 'https://www.facebook.com/david.johnson'
-          },
-          {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
-            linkedin: 'https://www.linkedin.com/in/david-johnson',
-            facebook: 'https://www.facebook.com/david.johnson'
-          },
-          {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
-            linkedin: 'https://www.linkedin.com/in/david-johnson',
-            facebook: 'https://www.facebook.com/david.johnson'
-          },
-          {
-            name: 'David Johnson',
-            image: './images/aaaa.png',
+            name: 'Aishwarya Maan Srivastava',
+            image: './contact/AishwaryaMaanSrivastava.webp',
             linkedin: 'https://www.linkedin.com/in/david-johnson',
             facebook: 'https://www.facebook.com/david.johnson'
           }
@@ -112,19 +116,19 @@ export default function Team() {
         members: [
           {
             name: 'Nishant Kumawat',
-            image: './contact/Nishant.jpg',
+            image: './contact/Nishant.webp',
             linkedin: 'https://www.linkedin.com/in/charlie-brown',
             facebook: 'https://www.facebook.com/charlie.brown'
           },
           {
             name: 'Chirag Jindal',
-            image: './contact/Chirag.jpeg',
+            image: './contact/ChiragJindal.webp',
             linkedin: 'https://www.linkedin.com/in/chirag-jindal-456682223/',
             facebook: 'https://www.facebook.com/abhimanyu.jindal.167/'
           },
           {
             name: 'Kumar Ravi',
-            image: './contact/KumarRavi.jpg',
+            image: './contact/KumarRavi.webp',
             linkedin: 'https://www.linkedin.com/in/kumar-ravi-a9391a24b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
             facebook: 'https://www.facebook.com/kumarravi.000'
           }

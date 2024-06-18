@@ -65,8 +65,8 @@
   }
   
   .team-member:hover img {
-    width: 100%;  
-    height: auto; 
+    width: 90%;  
+    height: 80%; 
     border-radius: 10px; 
   }
   

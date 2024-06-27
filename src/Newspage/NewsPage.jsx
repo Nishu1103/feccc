@@ -61,7 +61,7 @@ export default function  NewsPage ()  {
     gap:"30px",
     alignItems:"center",
     padding:"30px",
-    border:"1px solid #ccc",
+    // border:"1px solid #ccc",
     borderRadius:"5px",
     margin:"20px 40px"
 

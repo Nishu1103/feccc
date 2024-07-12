@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+.main {
+  font-family: "Poppins", sans-serif;
+  /* font-weight: 200; */
+  font-style: normal;
+  position: relative;
+  top: 60px;
+  padding: 20px;
+  margin-bottom: 4rem;
+  /* max-width: 500px; */
+}
+a {
+  text-decoration: none;
+  color: #0073e6;
+}
+.main h1 {
+  margin-bottom: 1rem;
+}
+/* ============== table style =============== */
+table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+td div {
+  margin: 0.5em;
+  min-height: 2rem;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+th div {
+  margin: 0.5em;
+}
+
+td,
+th {
+  overflow: hidden;
+  font-size: small;
+  width: calc(100% / N); /* Set column width to 1/N of table width */
+  text-align: left; /* Optional: Set text alignment */
+  border: 1px solid #ddd; /* Set border style, width, and color */
+}
+
+/* ================ */
+.week {
+  margin-bottom: 4rem;
+}
+.week1 {
+  margin-top: 1.8rem;
+}
+.additional {
+  margin: 4rem 0;
+}
+
+li {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}

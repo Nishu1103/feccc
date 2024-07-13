@@ -27,7 +27,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="social" data-aos="fade-left" data-aos-offset="150">
+        <div className="social" data-aos="fade-left" data-aos-offset="150" style={{height:"200px"}}>
           <div>
             <h2 className="title">Instagram</h2>
             <div className="logo">

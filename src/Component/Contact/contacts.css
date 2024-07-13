@@ -6,14 +6,16 @@
     top: 60px;
     padding: 20px;
     margin-bottom: 8rem;
+
     /* max-width: 500px; */
     overflow-x: hidden;
+    overflow-y: hidden;
   }
   .conatiner-contact{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 150vh;
   }
   
   h1 {

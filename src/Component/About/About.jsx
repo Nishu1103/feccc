@@ -18,7 +18,7 @@ const About = ()=>{
             </defs>
             <text width="200">
               <textPath xlinkHref="#circle" className="text">
-                FEC IIT KGP FEC IIT KGP FEC IIT KGP FEC IIT KGP FEC IIT KGP 
+                FEC IIT KGP FEC IIT KGP FEC IIT KGP FEC IIT KGP FEC IIT KGP FEC IIT KGP
               </textPath>
             </text>
           </svg>

@@ -21,7 +21,7 @@
     font-size: 2em;
     color: #333;
 
-    border-bottom: 2px solid #007bff;
+    border-bottom: 2px solid #DBE2FE;
     padding-bottom: 10px;
     margin-bottom: 20px;
   }
@@ -93,7 +93,7 @@
   .social-links a {
     display: inline-block;
     margin: 5px;
-    color: #007bff;
+    color: #DBE2FE;
     text-decoration: none;
     font-size: 1em;
     transition: color 0.3s;

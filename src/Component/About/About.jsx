@@ -28,7 +28,7 @@ const About = ()=>{
              
             <h2>About Us</h2>
           </div>
-          <div className="text">
+          <div className="texts">
                 Our mission is to provide a platform for the students of IIT Kharag
                 pur to showcase their talents and skills. We aim to provide a platform for
                 students to learn and grow. We aim to provide a platform for students to
@@ -37,7 +37,7 @@ const About = ()=>{
                 talents and skills. We aim to provide a platform for students to learn and grow. We aim
                 to provide a platform for students to showcase their talents and skills. We aim to provide a platform           
           </div>
-          <div className="text">
+          <div className="texts">
             Our mission is to provide a platform for the students of IIT Kharag
             pur to showcase their talents and skills. We aim to provide a platform for
             students to learn and grow. We aim to provide a platform for students to
@@ -53,23 +53,23 @@ const About = ()=>{
       <span className="title">Our Future Goal</span>
       <h2>Finance and Economic club, IIT Kharagpur</h2>
     </div>
-    <div className="text">
+    <div className="texts">
       Our mission is to provide a platform for the students of IIT Kharagpur to showcase
       their talents and skills. We aim to provide a platform for students to learn and grow.
     </div>
-    <div className="text">
+    <div className="texts">
        Our mission is to provide a platform for the students of IIT Kharagpur to showcase
        their talents and skills. We aim to provide a platform for students to learn and grow.
     </div>
-    <div className="text">
+    <div className="texts">
       Our mission is to provide a platform for the students of IIT Kharagpur to showcase
       their talents and skills. We aim to provide a platform for students to learn and grow.
     </div>
-    <div className="text">
+    <div className="texts">
       Our mission is to provide a platform for the students of IIT Kharagpur to showcase
       their talents and skills. We aim to provide a platform for students to learn and grow.
     </div>
-    <div className="text">
+    <div className="texts">
        Our mission is to provide a platform for the students of IIT Kharagpur to showcase
        their talents and skills. We aim to provide a platform for students to learn and grow.
     </div>

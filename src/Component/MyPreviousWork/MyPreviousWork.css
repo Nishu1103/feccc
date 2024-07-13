@@ -2,7 +2,7 @@
 .my-previous-work {
     padding: 20px;
     text-align: center;
-    /* background-image: url('./images/1.png') !important; */
+    background-image: url('./images/bg.png') !important;
   }
   
   .my-previous-work h2 {
@@ -47,7 +47,7 @@
     margin: 10px;
     padding: 10px;
     text-align: center;
-    background-color: #007bff;
+    background-color: #DBE2FE;
     color: white;
     text-decoration: none;
     border-radius: 4px;

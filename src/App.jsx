@@ -8,6 +8,7 @@ import ResourcesHome from "./Component/Home/Resources/Reso";
 import Blogs from "./Component/Blogs/Blogs";
 import Footer from "./Component/Footer/Footer";
 import Courses from "./Component/Courses/Courses";
+import Contact from "./Component/Contact/Contact";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/resources" element={<ResourcesHome />} />
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </>

@@ -24,9 +24,6 @@ export default function  Navbar() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/about">About</a>
-        </li>
-        <li>
           <a href="/news">News</a>
         </li>
         <li>
@@ -36,13 +33,16 @@ export default function  Navbar() {
           <a href="/team">Team</a>
         </li>
         <li>
+          <a href="/about">Courses</a>
+        </li>
+        <li>
           <a href="/resources">Resources</a>
         </li>
         <li>
           <a href="/contact">Contact</a>
         </li>
       </ul>
-      <h1 className="logo">
+      <h1 className="logo-navbar">
       <img src="images/logo.png" style={{
         width:"70px",
         height:"70px",

@@ -7,6 +7,7 @@ import AboutUs from "./Component/About/AboutUs";
 import ResourcesHome from "./Component/Home/Resources/Reso";
 import Blogs from "./Component/Blogs/Blogs";
 import Footer from "./Component/Footer/Footer";
+import Desktop from "./Component/Home/desktop";
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/about" element={<AboutUs />} />
         <Route path="/resources" element={<ResourcesHome />} />
         <Route path="/blogs" element={<Blogs />} />
+        <Route path="/desktop" element={<Desktop />} />
       
       </Routes>
       <Footer />

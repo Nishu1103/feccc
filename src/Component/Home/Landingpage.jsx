@@ -5,11 +5,11 @@ export default function (){
         <>
         <div className="landing-page">
             <img src="images/teams.png" alt="Landing Page Image" />
-            <div className="arrows">
+            {/* <div className="arrows">
                 <span className="arrow"></span>
                 <span className="arrow"></span>
                 <span className="arrow"></span>
-            </div>
+            </div> */}
         </div>  
         </>
     );

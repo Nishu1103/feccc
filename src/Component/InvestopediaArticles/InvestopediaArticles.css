@@ -1,0 +1,72 @@
+/* src/InvestopediaArticles.css */
+
+.investopedia-articles {
+    padding: 20px;
+    text-align: center;
+    /* background-image: url('./images/1.png') !important; */
+  }
+  
+  .investopedia-articles h2 {
+    margin-bottom: 20px;
+  }
+  
+  .article-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .article-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    width: calc(25% - 20px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .article-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article-box h3 {
+    margin: 10px;
+    font-size: 1.25em;
+  }
+  
+  .article-box p {
+    margin: 10px;
+    font-size: 0.95em;
+    color: #555;
+  }
+  
+  .article-box a {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+  }
+  
+  .article-box a:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 768px) {
+    .article-box {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .article-box {
+      width: calc(100% - 20px);
+    }
+  }
+  

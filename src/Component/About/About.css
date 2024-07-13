@@ -239,7 +239,10 @@ padding: 15px 50px;
       width: 150px;
       height: 150px;
     }
-  
+  .content-column{
+    display: flex;
+    flex-direction: column;
+  }
     .logo {
       width: 70px;
       height: 70px;

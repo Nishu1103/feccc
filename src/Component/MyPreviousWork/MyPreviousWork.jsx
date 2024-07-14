@@ -16,13 +16,13 @@ const works = [
   },
   {
     title: 'Roadmap on Finance',
-    image: 'images/ddd.png',
+    image: 'images/post3.webp',
     description: 'Description for project 3',
     link: 'https://medium.com/@fec.iitkgp/exploring-career-paths-in-finance-acaf3f438ca1'
   },
   {
     title: 'Summer of Finance',
-    image: 'images/dd.png',
+    image: 'images/fecpost.png',
     description: 'Description for project 4',
     link: 'https://boatneck-cougar-e3c.notion.site/SUMMER-OF-FINANCE-79cc8e8d272b479e9a8fcf1e916314ad'
   }

@@ -129,8 +129,8 @@ export default function Team() {
                 <img src={member.image} alt={member.name} className="member-photo" />
                 <h3>{member.name}</h3>
                 <div className="social-links">
-                <SocialIcon url={member.linkedin} style={{ height: 25, width: 25 }} />
-                <SocialIcon url={member.facebook} style={{ height: 25, width: 25 }} />
+                <SocialIcon url={member.linkedin }  target={"_blank"} style={{ height: 25, width: 25 }} />
+                <SocialIcon url={member.facebook}  target={"_blank"} style={{ height: 25, width: 25 }} />
                 </div>
               </div>
             ))}

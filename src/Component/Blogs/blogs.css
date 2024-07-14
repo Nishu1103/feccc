@@ -89,7 +89,11 @@
     height: 50px;
     margin-right: 15px;
   }
-  
+  .icon img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 50%;
+  }
   .icon-topic {
     font-size: 1em;
     color: #777;

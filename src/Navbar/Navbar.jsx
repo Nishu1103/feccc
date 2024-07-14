@@ -43,14 +43,7 @@ export default function  Navbar() {
         </li>
       </ul>
       <h1 className="logo-navbar">
-      <img src="images/logo.png" style={{
-        width:"70px",
-        height:"70px",
-        // padding:"10px"
-        margin:"-9px"
-
-      
-      }} alt="Logo" />
+      <img src="images/logo.png" alt="Logo" />
       </h1>
     </div>
   </nav>

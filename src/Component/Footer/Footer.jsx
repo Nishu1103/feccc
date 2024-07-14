@@ -40,7 +40,7 @@ export default function Footer() {
                     <div className="footer-row">
                         <div className="footer-bottom-column footer-bottom-column-large">
                             <p className="copyright-text">
-                                Copyright © 2017 All Rights Reserved by
+                                Copyright © 2022 All Rights Reserved by
                                 <a href="#">FEC</a>.
                             </p>
                         </div>

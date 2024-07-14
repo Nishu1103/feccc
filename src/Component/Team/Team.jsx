@@ -1,5 +1,5 @@
 import './team.css';
-
+import { SocialIcon } from 'react-social-icons';
 export default function Team() {
   const teamData = {
     groupPhoto: './images/teams.png',
@@ -27,12 +27,6 @@ export default function Team() {
             facebook: 'https://www.facebook.com/'
           },
           {
-            name: 'Jagrut Karnavat ',
-            image: './contact/Divysh.webp',
-            linkedin: 'https://www.linkedin.com/in/jagrut-karnavat-7b0b28257?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-            facebook: 'https://www.facebook.com/JKThunder279?mibextid=ZbWKwL'
-          },
-          {
             name: 'Aviral Singh',
             image: './contact/aviralsingh.webp',
             linkedin: 'https://www.linkedin.com/in/aviral-singh-6180a1285?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -49,12 +43,6 @@ export default function Team() {
             image: './contact/Diyansh.webp',
             linkedin: 'https://www.linkedin.com/',
             facebook: 'https://www.facebook.com'
-          },
-          {
-            name: 'Pranav Senthilkumar',
-            image: './contact/PranavSenthilkumar.webp',
-            linkedin: 'https://www.linkedin.com',
-            facebook: 'https://www.facebook.com/profile.php?id=100041830773249&mibextid=ZbWKwL'
           },
           {
             name: 'Shivee Gupta',
@@ -86,12 +74,6 @@ export default function Team() {
             facebook: 'https://www.facebook.com/jatain.kumar.17?mibextid=ZbWKwL'
           },
           {
-            name: 'Ashwini Raj',
-            image: './contact/Ashwini_Raj.webp',
-            linkedin: 'https://www.linkedin.com',
-            facebook: 'https://www.facebook.com'
-          },
-          {
             name: 'Palak Agrawal ',
             image: './contact/PalakAgrawal.webp',
             linkedin: 'https://www.linkedin.com/in/palak-agrawal-0a546724a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
@@ -111,7 +93,7 @@ export default function Team() {
           {
             name: 'Nishant Kumawat',
             image: './contact/Nishant.webp',
-            linkedin: 'https://www.linkedin.com/in/charlie-brown',
+            linkedin: 'https://www.linkedin.com',
             facebook: 'https://www.facebook.com/charlie.brown'
           },
           {
@@ -147,12 +129,8 @@ export default function Team() {
                 <img src={member.image} alt={member.name} className="member-photo" />
                 <h3>{member.name}</h3>
                 <div className="social-links">
-                  <a href={member.linkedin} target="_blank" rel="noopener noreferrer">
-                    LinkedIn
-                  </a>
-                  <a href={member.facebook} target="_blank" rel="noopener noreferrer">
-                    Facebook
-                  </a>
+                <SocialIcon url={member.linkedin} style={{ height: 25, width: 25 }} />
+                <SocialIcon url={member.facebook} style={{ height: 25, width: 25 }} />
                 </div>
               </div>
             ))}

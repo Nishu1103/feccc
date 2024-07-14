@@ -1,139 +1,109 @@
 import "./blogs.css";
 
-export default function Blogs() {
-    return (
-        <>
-  <section className="title container" style={{marginTop:"60px"}}>
-    <div className="row">
-      <div className="col-md-12">
-        <h1>Blogs </h1>
-        <div className="seperator" />
-        <p>Read some more Blogs </p>
-      </div>
-    </div>
-  </section>
-  {/* Start Blog Layout */}
-  <div className="container">
-    <div className="row">
-      <div className="col-md-6 item">
-        <div className="item-in">
-          <h4>Some Kind of Title</h4>
-          <div className="seperator" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            expedita eveniet consectetur, voluptates voluptatum, sit excepturi
-            earum. Veniam eius amet, accusantium, deserunt officia, quos qui
-            debitis laboriosam velit quis autem!
-          </p>
-          <a href="#">
-            Read More
-            <i className="fa fa-long-arrow-right" />
-          </a>
-        </div>
-      </div>
-      <div className="col-md-6 item">
-        <div className="item-in">
-          <h4>Some Kind of Title</h4>
-          <div className="seperator" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            expedita eveniet consectetur, voluptates voluptatum, sit excepturi
-            earum. Veniam eius amet, accusantium, deserunt officia, quos qui
-            debitis laboriosam velit quis autem!
-          </p>
-          <a href="#">
-            Read More
-            <i className="fa fa-long-arrow-right" />
-          </a>
-        </div>
-      </div>
-    </div>
-    <h1 style={{ textAlign: "center" }}>
-      Instagram post  
-    </h1>
-    {/* With Icons */}
-    <div className="row">
-      <div className="col-md-6 item">
-        <div className="item-in">
-          <div className="icon">
-            <a href="#">
-              {/*?xml version="1.0" encoding="iso-8859-1"?*/}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 16.662 16.662"
-                xmlSpace="preserve"
-                width="512px"
-                height="512px"
-              >
-                <g>
-                  <path
-                    d="M13.365,0.324H3.297L0,5.109l8.331,11.229l8.331-11.229C16.662,5.109,13.365,0.324,13.365,0.324z    M15.213,4.734h-3.4l1.298-3.054C13.111,1.68,15.213,4.734,15.213,4.734z M12.526,1.303l-1.342,3.156L9.071,1.303H12.526z    M10.544,4.734H6.442l1.909-3.273L10.544,4.734z M7.648,1.303L5.856,4.378L4.185,1.303H7.648z M3.584,1.634l1.685,3.1h-3.82   C1.449,4.734,3.584,1.634,3.584,1.634z M1.45,5.421h4.124l1.95,8.184C7.524,13.605,1.45,5.421,1.45,5.421z M6.279,5.421h4.548   l-2.468,8.732C8.359,14.153,6.279,5.421,6.279,5.421z M9.28,13.413l2.259-7.992h3.672L9.28,13.413z"
-                    fill="#777777"
-                  />
-                </g>
-              </svg>
-              <div className="icon-topic">Work Topic</div>
-            </a>
-          </div>
-          <h4>Some Kind of Title</h4>
-          <div className="seperator" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            expedita eveniet consectetur, voluptates voluptatum, sit excepturi
-            earum. Veniam eius amet, accusantium, deserunt officia, quos qui
-            debitis laboriosam velit quis autem!
-          </p>
-          <a href="#">
-            Read More
-            <i className="fa fa-long-arrow-right" />
-          </a>
-        </div>
-      </div>
-      <div className="col-md-6 item">
-        <div className="item-in">
-          <div className="icon">
-            <a href="#">
-              {/*?xml version="1.0" encoding="iso-8859-1"?*/}
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                xmlnsXlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                viewBox="0 0 16.662 16.662"
-                xmlSpace="preserve"
-                width="512px"
-                height="512px"
-              >
-                <g>
-                  <path
-                    d="M13.365,0.324H3.297L0,5.109l8.331,11.229l8.331-11.229C16.662,5.109,13.365,0.324,13.365,0.324z    M15.213,4.734h-3.4l1.298-3.054C13.111,1.68,15.213,4.734,15.213,4.734z M12.526,1.303l-1.342,3.156L9.071,1.303H12.526z    M10.544,4.734H6.442l1.909-3.273L10.544,4.734z M7.648,1.303L5.856,4.378L4.185,1.303H7.648z M3.584,1.634l1.685,3.1h-3.82   C1.449,4.734,3.584,1.634,3.584,1.634z M1.45,5.421h4.124l1.95,8.184C7.524,13.605,1.45,5.421,1.45,5.421z M6.279,5.421h4.548   l-2.468,8.732C8.359,14.153,6.279,5.421,6.279,5.421z M9.28,13.413l2.259-7.992h3.672L9.28,13.413z"
-                    fill="#777777"
-                  />
-                </g>
-              </svg>
-              <div className="icon-topic">Another Category or Post Type</div>
-            </a>
-          </div>
-          <h4>Some Kind of Title</h4>
-          <div className="seperator" />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi
-            expedita eveniet consectetur, voluptates voluptatum, sit excepturi
-            earum. Veniam eius amet, accusantium, deserunt officia, quos qui
-            debitis laboriosam velit quis autem!
-          </p>
-          <a href="#">
-            Read More
-            <i className="fa fa-long-arrow-right" />
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</>
+const blogs = [
+  {
+    title: "Roadmap on Finance",
+    content:
+      "Whether you are a newbie or a seasoned explorer, the blog is your treasure map to navigate the world of finance. Remember you are never alone on this quest! A Comprehensive Roadmap Presented by the Finance and Economics Club of IIT Kharagpur.",
+    link: "https://medium.com/@fec.iitkgp/exploring-career-paths-in-finance-acaf3f438ca1",
+  },
+  {
+    title: "Summer of Finance",
+    content:
+      "It's time to embark on a thrilling journey into Finance. As we delve into Finance, let's make the most of our vacations by immersing ourselves in its wonders. While your preferred learning style may vary, we recommend some resources that have proven to be useful:",
+    link: "https://boatneck-cougar-e3c.notion.site/SUMMER-OF-FINANCE-79cc8e8d272b479e9a8fcf1e916314ad",
+  },
+];
+const instagramPosts = [
+  {
+    imgSrc: "./post/recessionpost.jpeg",  
+    topic: "2025 Recession: Imminent Reality or Speculative Fear?",
+    title: "Some Kind of Title",
+    content:
+      "The Finance and Economics Club at IIT Kharagpur invites you to explore the potential 2025 recession. Is it an imminent reality or just speculative fear? Stay informed with our detailed analysis and join the discussion to share your insights. Swipe through to learn more about the economic outlook for 2025.",
+    link: "https://www.instagram.com/p/C9E6ruixvwx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    imgSrc: "./post/meta&eco.jpeg",  
+    topic: "Metaverse & Economics",
+    title: "Some Kind of Title",
+    content:
+      "The metaverse is here, and it's bringing a whole new dimension to economics!Finance and Economics Club, IIT Kharagpur invites you to explore the intersection of these two exciting fields. Swipe through the post where we discuss the potential impact of the metaverse on traditional economic concepts. ",
+    link: "https://www.instagram.com/p/C8EExgVR9uF/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    imgSrc: "./post/impactofelection.jpeg",  
+    topic: "IMPACT OF ELECTION on STOCK MARKET",
+    title: "Some Kind of Title",
+    content:
+      "Elections can significantly influence the stock market, creating waves of volatility and opportunity. This in-depth analysis by FEC IIT Kharagpur explores how political shifts affect market trends, investor behavior, and asset prices.",
+    link: "https://www.instagram.com/p/C7w818_SbkN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
+    imgSrc: "./post/kotakmahindra.jpeg",  
+    topic: "Kotak Mahindra Bank crisiss",
+    title: "Some Kind of Title",
+    content:
+      "The Kotak Mahindra Bank crisis has sent shockwaves through the financial sector. Discover the causes and far-reaching consequences of this critical event with us. 🌐 .",
+    link: "https://www.instagram.com/p/C7PJSoiPHGd/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  // Add more Instagram post objects here
+];
 
-    );
+export default function Blogs() {
+  return (
+    <>
+      <section className="title container" style={{ marginTop: "60px" }}>
+        <div className="row">
+          <div className="col-md-12">
+            <h1>Blogs</h1>
+            <div className="seperator" />
+            <p>Read some more Blogs</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Start Blog Layout */}
+      <div className="container">
+        <div className="row">
+          {blogs.map((blog, index) => (
+            <div key={index} className="col-md-6 item">
+              <div className="item-in">
+                <h4>{blog.title}</h4>
+                <div className="seperator" />
+                <p>{blog.content}</p>
+                <a href={blog.link}>
+                  Read More
+                  <i className="fa fa-long-arrow-right" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+        <h1 style={{ textAlign: "center" }}>Instagram Posts</h1>
+        {/* With Images */}
+        <div className="row">
+          {instagramPosts.map((post, index) => (
+            <div key={index} className="col-md-6 item">
+              <div className="item-in">
+                <div className="icon">
+                  <a href={post.link}>
+                    <img src={post.imgSrc} alt={post.topic} />
+                    <div className="icon-topic">{post.topic}</div>
+                  </a>
+                </div>
+                {/* <h4>{post.title}</h4> */}
+                <div className="seperator" />
+                <p>{post.content}</p>
+                <a href={post.link}>
+                  Read More
+                  <i className="fa fa-long-arrow-right" />
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </>
+  );
 }

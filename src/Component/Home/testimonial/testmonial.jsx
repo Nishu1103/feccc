@@ -32,7 +32,7 @@ const Testimonial = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    // width: "500px",
+    width: "500px",
     autoplaySpeed: 3000,
   };
 
@@ -43,7 +43,7 @@ const Testimonial = () => {
                 textAlign: "center",
                 padding: "20px",
                 color: "black",
-                fontSize: "40px",
+                fontSize: "30px",
                 fontWeight: "bold",
                 fontFamily: "sans-serif",
                 textTransform: "uppercase",

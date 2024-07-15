@@ -1,12 +1,13 @@
-/* .testimonial-slider {
+ /* .testimonial-slider {
     width: 90%;
     margin: 0 auto;
-}
+} */
 
-.testimonial {
+/* .testimonial {
     text-align: center;
     padding: 20px;
-} */
+    width: 200%;
+}  */
 
 .testimonial img {
     border-radius: 50%;
@@ -28,6 +29,10 @@
     .hhh{
         direction: flex;
         flex-direction: column;
+    }
+    .testimonial img{
+        width: 100px;
+        height: 100px;
     }
     
 }

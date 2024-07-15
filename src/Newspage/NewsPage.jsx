@@ -66,17 +66,13 @@ export default function  NewsPage ()  {
     margin:"20px 40px"
 
     }}>
-        <div className="textstock" style={{
-            width:"80%",
-            padding:"20px",
-            textAlign:"center",
-            // border:"1px solid #ccc",
-            borderRadius:"5px"
-            
-        }}>
+        <div className="textstock">
           <h1 style={{color:"black"}}>Stock Market Ticker</h1>
 
           <p style={{color:"black"}}>
+            A stock market ticker provides real-time information about the
+            prices and trading volume of stocks. It can help investors make
+            informed decisions about buying and selling stocks.
             A stock market ticker provides real-time information about the
             prices and trading volume of stocks. It can help investors make
             informed decisions about buying and selling stocks.

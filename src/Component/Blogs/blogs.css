@@ -10,14 +10,14 @@
   .title h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-    color: #333;
+    color: rgb(40, 162, 210);
     text-align: center;
   }
   
   .title .seperator {
     width: 50px;
     height: 2px;
-    background-color: #0073e6;
+    background-color: rgb(40, 162, 210);
     margin: 0 auto;
     margin-bottom: 10px;
   }
@@ -54,7 +54,7 @@
   .item-in .seperator {
     width: 50px;
     height: 2px;
-    background-color: #0073e6;
+    background-color: rgb(40, 162, 210);
     margin-bottom: 10px;
   }
   
@@ -67,10 +67,13 @@
   
   .item-in a {
     text-decoration: none;
-    color: #0073e6;
+    color: rgb(40, 162, 210);
     font-weight: bold;
-    display: inline-flex;
+    /* display: inline-flex; */
     align-items: center;
+    display: flex;
+    /* flex-direction: column; */
+    gap: 2rem;
   }
   
   .item-in a i {
@@ -120,6 +123,11 @@
     .item {
       margin-bottom: 20px;
     }
+    .item-in a{
+      display: flex;
+      /* flex-direction: column; */
+      gap: 2rem;
+    }
   }
   
   @media (max-width: 576px) {
@@ -145,6 +153,12 @@
   
     .icon-topic {
       font-size: 0.8em;
+    }
+    .icon img{
+      width: 50px;
+      height: auto;
+
+
     }
   }
   

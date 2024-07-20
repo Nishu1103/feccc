@@ -1,16 +1,46 @@
+import { useEffect, useRef } from "react";
 import "./landing.css";
-// import News from "../News/News";
-export default function (){
-    return (
-        <>
-        <div className="landing-page">
-            <img src="images/teams.png" alt="Landing Page Image" />
-            {/* <div className="arrows">
-                <span className="arrow"></span>
-                <span className="arrow"></span>
-                <span className="arrow"></span>
-            </div> */}
-        </div>  
-        </>
-    );
-};
+
+export default function LandingPage() {
+  const vantaRef = useRef(null);
+
+  useEffect(() => {
+    // Wait until the global VANTA is available
+    const initVanta = () => {
+      if (window.VANTA) {
+        const VANTA = window.VANTA;
+        const THREE = window.THREE;
+
+        const effect = VANTA.NET({
+          el: vantaRef.current,
+          mouseControls: true,
+          touchControls: true,
+          gyroControls: false,
+          minHeight: 200.0,
+          minWidth: 200.0,
+          scale: 1.0,
+          scaleMobile: 1.0,
+          color: 0x88dbda,
+          backgroundColor: 0xffffff,
+          showDots: false,
+        });
+
+        return effect;
+      }
+    };
+
+    const effect = initVanta();
+
+    return () => {
+      if (effect && typeof effect.destroy === "function") {
+        effect.destroy();
+      }
+    };
+  }, []);
+
+  return (
+    <div className="landing-page" ref={vantaRef}>
+      <img src="images/text.png" alt="Landing Page Image" />
+    </div>
+  );
+}

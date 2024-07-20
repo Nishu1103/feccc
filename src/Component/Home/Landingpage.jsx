@@ -22,10 +22,10 @@ export default function LandingPage() {
           scaleMobile: 0.5,
           color: 0x88dbda,
           backgroundColor: 0xffffff,
-          showDots: false,
-          points: 20.00,
-          maxDistance: 13.00,
-          spacing: 12.00
+        //   showDots: false,
+          points: 7.00,
+          maxDistance: 15.00,
+          spacing: 15.00
         });
 
         return effect;

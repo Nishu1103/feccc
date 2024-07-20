@@ -19,10 +19,13 @@ export default function LandingPage() {
           minHeight: 200.0,
           minWidth: 200.0,
           scale: 1.0,
-          scaleMobile: 1.0,
+          scaleMobile: 0.5,
           color: 0x88dbda,
           backgroundColor: 0xffffff,
           showDots: false,
+          points: 20.00,
+          maxDistance: 13.00,
+          spacing: 12.00
         });
 
         return effect;

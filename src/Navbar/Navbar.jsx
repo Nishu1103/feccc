@@ -23,20 +23,20 @@ export default function  Navbar() {
         <li>
           <a href="/">Home</a>
         </li>
-        <li>
+        {/* <li>
           <a href="/news">News</a>
-        </li>
+        </li> */}
         <li>
           <a href="/blogs">Blogs</a>
-        </li>
-        <li>
-          <a href="/team">Team</a>
         </li>
         <li>
           <a href="/courses">Courses</a>
         </li>
         <li>
           <a href="/resources">Resources</a>
+        </li>
+        <li>
+          <a href="/team">Teams</a>
         </li>
         <li>
           <a href="/contact">Contact</a>

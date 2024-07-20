@@ -52,7 +52,7 @@ background-color:#d1d2d6;
 position: relative;
 font-size: 16px;
 line-height: 26px;
-color: black;
+color: #26ACE5;
 /* font-weight: 400; */
 margin-top: 35px;
 }
@@ -82,7 +82,7 @@ margin-bottom: 50px;
 
 .about-section .content-column .inner-column{
 position: relative;
-padding-left: 30px;
+/* padding-left: 30px; */
 }
 
 .about-section .texts {
@@ -153,7 +153,7 @@ padding: 15px 50px;
     text-transform: uppercase;
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
-    fill: #111;
+    fill: #26ACE5;
     text-shadow: 2px 0px #ccc;
   }
   
@@ -211,7 +211,8 @@ padding: 15px 50px;
     }
   
     .text {
-      font-size: 10px;
+      font-size: 15px;
+
     }
   }
   

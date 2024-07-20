@@ -154,7 +154,7 @@ padding: 15px 50px;
     font-family: 'Kanit', sans-serif;
     font-size: 12px;
     fill: #26ACE5;
-    text-shadow: 2px 0px #ccc;
+    /* text-shadow: 2px 0px #ccc; */
   }
   
   @keyframes rotate-circle {

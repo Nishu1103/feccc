@@ -70,7 +70,7 @@
 
 @media (max-width: 768px){
     .navbar{
-        opacity: 0.95;
+        /* opacity: 0.95; */
         position: fixed;
         top: 0px;
     }

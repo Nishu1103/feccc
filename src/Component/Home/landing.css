@@ -1,72 +1,96 @@
-
+.left {
+  flex: 1.5;
+  width: 75%;
+}
+.right {
+  flex: 1;
+  flex-basis: 25%;
+}
+.right img {
+  width: 100%;
+  height: auto;
+  padding-left: 1rem;
+}
+.left h1 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.para {
+  margin-top: 3rem;
+  display: block;
+  font-size: 1.3rem;
+  text-align: justify;
+  line-height: 1.28em;
+  color: #222222;
+  font-weight: 400;
+}
+.typing {
+  font-size: Sem;
+  letter-spacing: 16px;
+  font-family: monospace;
+  border-right: 5px solid;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 10s steps(18) infinite,
+    cursor 0.4s step-end infinite alternate;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  25% {
+    width: 100%;
+  }
+  75% {
+    width: 100%;
+  }
+  90% {
+    width: 0%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
 .landing-page {
-    margin-top: 4rem;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
+  box-sizing: border-box;
+  margin-left: 8rem;
+  margin-right: 0rem;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-.landing-page img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80%;
-    object-fit: contain;
-    /* z-index: -1; */
-}
-.text img{
-    height: auto;
-    width: 100%;
-    display: block;
-
-}
-.arrows {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    bottom: 20px;
-    width: 100%;
-    gap: 0rem;
+.text img {
+  height: auto;
+  width: 100%;
+  display: block;
 }
 
-.arrow {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-right: 5px solid white;
-    border-bottom: 5px solid white;
-    transform: rotate(45deg);
-    margin: 10px;
-    animation: bounce 2s infinite;
-}
- 
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0) rotate(45deg);
-    }
-    40% {
-        transform: translateY(-15px) rotate(45deg);
-    }
-    60% {
-        transform: translateY(-10px) rotate(45deg);
-    }
+@media (max-width: 900px) {
+  .landing-page {
+    margin: 0rem 2.5rem;
+  }
+  .right {
+    display: none;
+  }
 }
 
- 
-@media (max-width: 768px) {
-    .arrow {
-        width: 20px;
-        height: 20px;
-        border-width: 3px;
-        margin: 5px;
-    }
-
-    .arrows {
-        bottom: 10px;
-    }
-}
+/* @media (max-width: 1224px) {
+  .landing-page {
+    margin: 0rem 8rem;
+  }
+  .right {
+    display: none;
+  }
+} */

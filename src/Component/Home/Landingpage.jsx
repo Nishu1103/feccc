@@ -2,48 +2,28 @@ import { useEffect, useRef } from "react";
 import "./landing.css";
 
 export default function LandingPage() {
-  const vantaRef = useRef(null);
-
-  useEffect(() => {
-    // Wait until the global VANTA is available
-    const initVanta = () => {
-      if (window.VANTA) {
-        const VANTA = window.VANTA;
-        const THREE = window.THREE;
-
-        const effect = VANTA.NET({
-          el: vantaRef.current,
-          mouseControls: true,
-          touchControls: true,
-          gyroControls: false,
-          minHeight: 200.0,
-          minWidth: 200.0,
-          scale: 1.0,
-          scaleMobile: 0.5,
-          color: 0x88dbda,
-          backgroundColor: 0xffffff,
-        //   showDots: false,
-          points: 7.00,
-          maxDistance: 15.00,
-          spacing: 15.00
-        });
-
-        return effect;
-      }
-    };
-
-    const effect = initVanta();
-
-    return () => {
-      if (effect && typeof effect.destroy === "function") {
-        effect.destroy();
-      }
-    };
-  }, []);
-
   return (
-    <div className="landing-page" ref={vantaRef}>
-      <img src="images/text.png" alt="Landing Page Image" />
+    <div className="landing-page">
+      <section className="left">
+        <h1>
+          Finance <span>and</span> Economics club
+          <br />
+          <span>IIT Kharagpur</span>
+        </h1>
+        <div className="typing">Typewriting effect</div>
+        <div className="para">
+          <p>
+            The Finance and Economics Club (FEC) functions as a platform for
+            enthusiastic students to come together and learn the intriguing and
+            fun world of finance, by organizing introductory sessions for people
+            who are interested in finance but do not have any prior knowledge,
+            through inviting Industry Leaders and alumni
+          </p>
+        </div>
+      </section>
+      <section className="right">
+        <img src="images/text.png" alt="Landing Page Image" />
+      </section>
     </div>
   );
 }

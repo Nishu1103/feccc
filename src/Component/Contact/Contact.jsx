@@ -7,7 +7,7 @@ AOS.init();
 
 const Contact = () => {
   return (
-    <div className="container-contact">
+    <div className="container">
       <div className="main">
         <h1 className="">Contact Us</h1>
         <div className="info">
@@ -18,16 +18,16 @@ const Contact = () => {
           </div>
           <div className="phone">
             <h2>Phone</h2>
-            <p>+91 8302963154</p>
+            <p></p>
           </div>
           <div className="mail">
             <h2>Mail</h2>
             <p>
-              fec.iitkgp@gmail.com
+              <a href=""></a>
             </p>
           </div>
         </div>
-        <div className="social" data-aos="fade-left" data-aos-offset="150" style={{height:"200px"}}>
+        <div className="social" data-aos="fade-left" data-aos-offset="150">
           <div>
             <h2 className="title">Instagram</h2>
             <div className="logo">
@@ -47,9 +47,9 @@ const Contact = () => {
                     y2="1.464"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop offset="0" stopColor="#FFC107"></stop>
-                    <stop offset=".507" stopColor="#F44336"></stop>
-                    <stop offset=".99" stopColor="#9C27B0"></stop>
+                    <stop offset="0" stop-color="#FFC107"></stop>
+                    <stop offset=".507" stop-color="#F44336"></stop>
+                    <stop offset=".99" stop-color="#9C27B0"></stop>
                   </linearGradient>
                   <path
                     fill="url(#a)"
@@ -63,9 +63,9 @@ const Contact = () => {
                     y2="5.172"
                     gradientUnits="userSpaceOnUse"
                   >
-                     <stop offset="0" stopColor="#FFC107"></stop>
-                    <stop offset=".507" stopColor="#F44336"></stop>
-                    <stop offset=".99" stopColor="#9C27B0"></stop>
+                    <stop offset="0" stop-color="#FFC107"></stop>
+                    <stop offset=".507" stop-color="#F44336"></stop>
+                    <stop offset=".99" stop-color="#9C27B0"></stop>
                   </linearGradient>
                   <path
                     fill="url(#b)"
@@ -79,9 +79,9 @@ const Contact = () => {
                     y2="3.323"
                     gradientUnits="userSpaceOnUse"
                   >
-                     <stop offset="0" stopColor="#FFC107"></stop>
-                    <stop offset=".507" stopColor="#F44336"></stop>
-                    <stop offset=".99" stopColor="#9C27B0"></stop>
+                    <stop offset="0" stop-color="#FFC107"></stop>
+                    <stop offset=".507" stop-color="#F44336"></stop>
+                    <stop offset=".99" stop-color="#9C27B0"></stop>
                   </linearGradient>
                   <circle cx="12.3" cy="3.7" r=".533" fill="url(#c)"></circle>
                 </svg>

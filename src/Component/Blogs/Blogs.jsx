@@ -72,7 +72,7 @@ export default function Blogs() {
                 <h4>{blog.title}</h4>
                 <div className="seperator" />
                 <p>{blog.content}</p>
-                <a href={blog.link}>
+                <a href={blog.link} target={"_blank"}>
                   Read More
                   <i className="fa fa-long-arrow-right" />
                 </a>
@@ -95,7 +95,7 @@ export default function Blogs() {
                 {/* <h4>{post.title}</h4> */}
                 <div className="seperator" />
                 <p>{post.content}</p>
-                <a href={post.link}>
+                <a href={post.link} target={"_blank"}>
                   Read More
                   <i className="fa fa-long-arrow-right" />
                 </a>

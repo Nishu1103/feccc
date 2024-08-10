@@ -49,7 +49,7 @@ const About = ()=>{
       
        
     </div>
-    <div className="sec-title">
+    {/* <div className="sec-title">
       <span className="title">Our Future Goal</span>
       <h2>Finance and Economic club, IIT Kharagpur</h2>
     </div>
@@ -68,11 +68,11 @@ const About = ()=>{
     <div className="texts">
       Our mission is to provide a platform for the students of IIT Kharagpur to showcase
       their talents and skills. We aim to provide a platform for students to learn and grow.
-    </div>
-    <div className="texts">
+    </div> */}
+    {/* <div className="texts">
        Our mission is to provide a platform for the students of IIT Kharagpur to showcase
        their talents and skills. We aim to provide a platform for students to learn and grow.
-    </div>
+    </div> */}
   </div>
 </section>
 

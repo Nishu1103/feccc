@@ -39,11 +39,11 @@ export default function  Navbar() {
           <a href="/team">Teams</a>
         </li>
         <li>
-          <a href="/contact">Contact</a>
+          <a href="/contact"> Subscribe </a>
         </li>
       </ul>
       <h1 className="logo-navbar">
-      <img src="images/logo.png" alt="Logo" />
+      <img src="images/remove.png" alt="Logo" />
       </h1>
     </div>
   </nav>

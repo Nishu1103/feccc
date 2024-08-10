@@ -5,6 +5,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* overflow-x: hidden !important; */
     
 }
 
@@ -28,11 +29,11 @@
     position: fixed;
     width: 100%;
     /* background: #fff; */
-    color: #000;
+    color: white;
     /* opacity: 0.85; */
     z-index: 100;
     top: 0px;
-    background-color: #58bff2;
+    background-color: #175996;
 }
 
 .navbar-container{
@@ -58,7 +59,7 @@
 }
 
 .navbar a{
-    color: black;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease-in-out;
@@ -66,6 +67,13 @@
 
 .navbar a:hover{
     color: #117964;
+}
+
+.logo-navbar img {
+    height: 45px;
+    width: 270px;
+    object-fit: cover;
+    margin-top: 10px;
 }
 
 @media (max-width: 768px){
@@ -177,6 +185,13 @@
     .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3{
         transform: rotate(-45deg);
     }
+    .logo-navbar img {
+        height: 45px;
+        width: 270px;
+        object-fit: cover;
+        /* border-radius: 90%; */
+        margin-top: 0px;
+      }
 
 }
 
@@ -187,8 +202,9 @@
 }
 
 .logo-navbar img {
-    height: 50px;
-    width: 50px;
+    height: 45px;
+    width: 270px;
     object-fit: cover;
-    border-radius: 50%;
+    /* border-radius: 90%; */
+    /* margin-top: 0px; */
   }

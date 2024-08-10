@@ -1,7 +1,7 @@
  
 .footer {
-  background-color: #58bff2;
-  color: black;
+  background-color: #175996;
+  color: white;
   padding: 20px 0;
   font-family: Arial, sans-serif;
 }
@@ -60,7 +60,7 @@ h3 {
 }
 
 .footer-links a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -76,6 +76,12 @@ hr {
 
 .copyright-text {
   margin: 0;
+}
+.copyright-text a {
+  margin: 0;
+  color : white;
+  font-style: italic;
+  /* font-weight: 700; */
 }
 
 .social-icons {
@@ -97,7 +103,7 @@ hr {
 }
 
 .social-icons a:hover {
-  color: #26ACE5;
+  color: #175996;
 }
 
 .fa {

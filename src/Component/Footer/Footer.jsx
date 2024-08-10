@@ -7,10 +7,20 @@ export default function Footer() {
         <footer className="footer">
             <div className="footer-container">
                 <div className="footer-row">
-                    <div className="footer-column footer-column-large">
-                        <h3>About</h3>
+                    <div className="footer-column footer-column-large contact-info">
+                        <h3>Contact Info</h3>
                         <p className="text-justify">
-                            We are a team of college students working on this project like its our full time job. Any amount would help support and continue development on this project and is greatly appreciated.
+                            <label>Address:</label>
+                            Finance and Economics Club, IIT Kharagpur<br />
+                            Kharagpur, West Bengal, India
+                        </p>
+                        <p className="text-justify">
+                            <label>Email:</label>
+                            <a href="mailto:fec.iitkgp@gmail.com">fec.iitkgp@gmail.com</a>
+                        </p>
+                        <p className="text-justify">
+                            <label>Phone:</label>
+                            +91 12345 67890
                         </p>
                     </div>
                     <div className="footer-column footer-column-small">
@@ -38,8 +48,8 @@ export default function Footer() {
                 <div className="footer-row">
                     <div className="footer-bottom-column footer-bottom-column-large">
                         <p className="copyright-text">
-                            Copyright © 2022 All Rights Reserved by   
-                            <a href="#"> FEC</a>.
+                            Copyright © 2022 All Rights Reserved by
+                            <a href="#"> FEC</a>
                         </p>
                     </div>
                     <div className="footer-bottom-column footer-bottom-column-small">

@@ -100,10 +100,7 @@ const LandingPage = () => {
 
   return (
     <div className="landing-page" ref={vantaRef}>
-      {/* <img src="images/text.png" alt="Landing Page Image" /> */}
+      <img src="images/text.png" alt="Landing Page Image" />
     </div>
-
   );
 }
-
-export default LandingPage;

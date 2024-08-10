@@ -83,7 +83,8 @@ export default function Team() {
             name: 'Aishwarya Maan Srivastava',
             image: './contact/AishwaryaMaanSrivastava.webp',
             linkedin: 'https://www.linkedin.com/in/aishwarya-maan-srivastava-b883a1255/',
-            facebook: 'https://www.facebook.com/profile.php?id=100087460456348'
+            facebook: 'https://www.facebook.com/profile.php?id=100087460456348',
+            gmail: 'nishantk1103@gmail.com'
           }
         ]
       },
@@ -131,6 +132,7 @@ export default function Team() {
                 <div className="social-links">
                 <SocialIcon url={member.linkedin }  target={"_blank"} style={{ height: 25, width: 25 }} />
                 <SocialIcon url={member.facebook}  target={"_blank"} style={{ height: 25, width: 25 }} />
+                <SocialIcon url={`mailto:${member.gmail}`}   target={"_blank"} style={{ height: 25, width: 25 }} />
                 </div>
               </div>
             ))}

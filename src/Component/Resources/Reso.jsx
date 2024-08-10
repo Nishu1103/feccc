@@ -26,7 +26,7 @@ export default function Resources() {
                 src="./images/reso.jpg"
                 alt="reso"
               />
-              <a href="https://www.investopedia.com/">
+              <a href="https://www.investopedia.com/" target={"_blank"}>
                 Investopedia - A comprehensive resource for investing and
                 personal finance.
               </a>
@@ -36,7 +36,7 @@ export default function Resources() {
                 src="./images/reso.jpg"
                 alt="reso"
               />
-              <a href="https://www.bloomberg.com/">
+              <a href="https://www.bloomberg.com/" target={"_blank"}>
                 Bloomberg - Business news, data, and analysis.
               </a>
             </li>
@@ -45,7 +45,7 @@ export default function Resources() {
                 src="./images/reso.jpg"
                 alt="reso"
               />
-              <a href="https://www.cnbc.com/">
+              <a href="https://www.cnbc.com/" target={"_blank"}>
                 CNBC - Business news and financial information.
               </a>
             </li>
@@ -54,7 +54,7 @@ export default function Resources() {
                 src="./images/reso.jpg"
                 alt="reso"
               />
-              <a href="https://www.wsj.com/">
+              <a href="https://www.wsj.com/" target={"_blank"}>
                 The Wall Street Journal - Business news and analysis.
               </a>
             </li>
@@ -64,7 +64,7 @@ export default function Resources() {
                 src="./images/reso.jpg"
                 alt="reso"
               />
-              <a href="https://www.barrons.com/">
+              <a href="https://www.barrons.com/" target={"_blank"}>
                 Barrons - Financial news and analysis.
               </a>
             </li>

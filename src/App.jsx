@@ -9,6 +9,7 @@ import Footer from "./Component/Footer/Footer";
 import Desktop from "./Component/Home/desktop";
 import Courses from "./Component/Courses/courses";
 import Contact from "./Component/Contact/Contact";
+import Registration from "./Component/register/registration";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="/blogs" element={<Blogs />} />
         <Route path="/desktop" element={<Desktop />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/register" element={<Registration />} />
       </Routes>
       <Footer />
     </>

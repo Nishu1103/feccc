@@ -1,6 +1,6 @@
  .formbhardo {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #ece9e6, #ffffff);
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  /* background: linear-gradient(135deg, #ece9e6, #ffffff); */
   margin-top: 60px;
   padding: 0;
   display: flex;
@@ -13,19 +13,14 @@
   /* background: rgba(255, 255, 255, 0.2); */
   border-radius: 15px;
   padding: 40px;
-  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
-  /* backdrop-filter: blur(10px); */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
   /* -webkit-backdrop-filter: blur(10px); */
   /* border: 1px solid rgba(255, 255, 255, 0.18); */
   width: 90%;
   max-width: 400px;
   animation: fadeInUp 1s ease-out;
-  background: rgba( 23, 89, 150, 0.3 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 2px );
--webkit-backdrop-filter: blur( 2px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+ 
 }
 
 .form-title {

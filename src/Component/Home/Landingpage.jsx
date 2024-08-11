@@ -3,7 +3,7 @@ import "./landing.css";
 import Animatedletters from "./Animetedlatter";
 import Typewriter from "./typewriter";
 
-const LandingPage = () => {
+export default function  LandingPage () {
   // const vantaRef = useRef(null);
   const [letterClass, setLetters] = useState('text-animate')
   const FArray = ['F', 'i', 'n', 'a', 'n', 'c', 'e', ' ']
@@ -97,4 +97,4 @@ const LandingPage = () => {
   );
 }
 
-export default LandingPage;
+// export default LandingPage;

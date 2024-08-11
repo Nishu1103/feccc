@@ -14,6 +14,7 @@
     "aos": "^2.3.4",
     "axios": "^1.7.3",
     "axois": "^0.0.1-security",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.3.21",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.4",
@@ -35,8 +36,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "postcss": "^8.4.40",
-    "tailwindcss": "^3.4.7",
     "sass": "^1.77.8",
+    "tailwindcss": "^3.4.7",
     "vite": "^5.2.0"
   }
 }

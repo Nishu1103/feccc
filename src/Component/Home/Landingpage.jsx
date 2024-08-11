@@ -1,16 +1,18 @@
-import React, { useEffect, useRef, useState } from "react";
+import  { useEffect,   useState } from "react";
 import "./landing.css";
 import Animatedletters from "./Animetedlatter";
 import Typewriter from "./typewriter";
 
 const LandingPage = () => {
-  const vantaRef = useRef(null);
+  // const vantaRef = useRef(null);
   const [letterClass, setLetters] = useState('text-animate')
   const FArray = ['F', 'i', 'n', 'a', 'n', 'c', 'e', ' ']
   const AArray = ['a', 'n', 'd']
   const EArray = [' ', 'E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
 
   const placeArray = ['I', 'I', 'T', ' ', 'K', 'H', 'A', 'R', 'A', 'G', 'P', 'U', 'R']
+
+  
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -72,7 +74,7 @@ const LandingPage = () => {
 
           <br />
           <a
-            href="#"
+            href="/register"
             target="_blank"
             rel="noopener noreferrer"
             style={{
@@ -95,12 +97,7 @@ const LandingPage = () => {
   );
 
 
-  const effect = initVanta();
 
-
-  return (
-    <div className="landing-page" ref={vantaRef}>
-      <img src="images/text.png" alt="Landing Page Image" />
-    </div>
-  );
 }
+
+export default LandingPage;

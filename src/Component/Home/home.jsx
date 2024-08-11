@@ -1,4 +1,4 @@
-import LandingPage from "./Landingpage";
+import LandingPage from "./Landingpage"
 import Testimonial from "./testimonial/testmonial";
 import MyPreviousWork from "../MyPreviousWork/MyPreviousWork";
 import About from "../About/About";

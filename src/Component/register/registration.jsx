@@ -1,11 +1,12 @@
-import { useState } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
+import './registration.css'; // Import the CSS file
 
 const Registration = () => {
   const [formData, setFormData] = useState({
+    id: '',
     name: '',
     email: '',
-    message: '',
+    phone: '',
   });
 
   const handleChange = (e) => {
@@ -19,27 +20,39 @@ const Registration = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post(
-        'https://script.google.com/macros/s/AKfycbwXilAzWM-TRz5F4-SJA2yOK7h5fxR7_h5qdK1kuzfZGSz3SnZVCekhJ6nOMNAcUPHeEw/exec', // Replace with your Google Apps Script URL
-        formData
-      );
-      console.log('Data appended successfully:', response.data);
+      const response = await fetch("https://sheet.best/api/sheets/56b2780e-1017-41db-8531-eca120703ecb", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      console.log('Response:', result);
     } catch (error) {
-      console.error('Error appending data:', error);
+      console.error('Error:', error);
     }
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100vh',
-    }}>
-      <h1>Submit Data to Google Sheets</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="formbhardo">
+
+
+    <div className="form-container">
+      <h1 className="form-title">Registration Form</h1>
+      <form onSubmit={handleSubmit} className="registration-form">
+        <div className="form-group">
+          <label>ID:</label>
+          <input
+            type="text"
+            name="id"
+            value={formData.id}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
           <label>Name:</label>
           <input
             type="text"
@@ -49,7 +62,7 @@ const Registration = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
@@ -59,18 +72,24 @@ const Registration = () => {
             required
           />
         </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
+        <div className="form-group">
+          <label>Phone Number:</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
             onChange={handleChange}
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
+    </div>
+
+
+
+      
   );
 };
 

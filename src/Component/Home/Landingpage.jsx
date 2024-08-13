@@ -1,18 +1,18 @@
-import  { useEffect,   useState } from "react";
+import { useEffect, useState } from "react";
 import "./landing.css";
 import Animatedletters from "./Animetedlatter";
 import Typewriter from "./typewriter";
 
-export default function  LandingPage () {
+export default function LandingPage() {
   // const vantaRef = useRef(null);
   const [letterClass, setLetters] = useState('text-animate')
   const FArray = ['F', 'i', 'n', 'a', 'n', 'c', 'e', ' ']
-  const AArray = ['a', 'n', 'd']
-  const EArray = [' ', 'E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
+  const AArray = ['a', 'n', 'd',' ']
+  const EArray = ['E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
 
   const placeArray = ['I', 'I', 'T', ' ', 'K', 'H', 'A', 'R', 'A', 'G', 'P', 'U', 'R']
 
-  
+
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -30,23 +30,30 @@ export default function  LandingPage () {
         <section id="left">
           <div className="heading">
             <h1 style={{ fontSize: '35px', fontWeight: '700' }}>
-              <span>
-                <Animatedletters
+              <div className="span-container">
+                <span>
+                  <Animatedletters
+                    letterClass={letterClass}
+                    strArray={FArray}
+                    idx={15}
+                  />
+                </span>
+              </div>
+              <div className="span-container">
+                <span style={{ fontWeight: '400' }}><Animatedletters
                   letterClass={letterClass}
-                  strArray={FArray}
-                  idx={15}
+                  strArray={AArray}
+                  idx={23}
                 />
-              </span>
-              <span style={{ fontWeight: '400' }}><Animatedletters
-                letterClass={letterClass}
-                strArray={AArray}
-                idx={23}
-              /></span>
+                </span>
+              </div>
+              <div className="span-container">
               <span><Animatedletters
                 letterClass={letterClass}
                 strArray={EArray}
                 idx={26}
-              /></span>
+                /></span>
+                </div>
               <br />
               <span style={{ color: '#63BB54' }}>
                 <Animatedletters

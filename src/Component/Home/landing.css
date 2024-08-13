@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
 .landing-page {
     margin-top: 4rem;
     width: 100vw;
@@ -48,13 +48,14 @@ section{
 }
 h1{
     text-align: start !important;
+    font-family: poppins;
 }
 
 #main #left {
     height: 80%;
-    margin-left: 2%;
+    margin-left: 3%;
     max-width: 50%;
-    font-family: 'Inter';
+    /* font-family: 'Inter'; */
 
     
 }
@@ -95,6 +96,8 @@ p {
     margin-inline-end: 0px;
     unicode-bidi: isolate;
     font-family: Arial, sans-serif !important;
+    line-height: 1.5em;
+    letter-spacing: 0.5px;
 }
 
 
@@ -123,6 +126,10 @@ p {
         max-height: 90%;
     }
 } */
+
+.span-container{
+    display: inline-block;
+}
 
 @keyframes bounce {
 
@@ -155,10 +162,12 @@ p {
     .arrows {
         bottom: 10px;
     }
-
+    .heading h1{
+        display: none;
+    }
     #main p{
         font-weight: 100 !important;
-        text-align: center !important;
+        text-align: justify !important;
       }
       #main #right{
         max-width:0%;
@@ -166,8 +175,8 @@ p {
       }
       #main{
         display: block;
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
         min-height: 100%;
         margin-bottom: 15% !important;
       }

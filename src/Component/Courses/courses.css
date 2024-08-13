@@ -61,3 +61,18 @@ li {
   margin-left: 1rem;
   margin-bottom: 0.5rem;
 }
+
+@media (max-width: 768px) {
+  .main {
+    padding: 0px !important;
+  }
+  .week {
+    margin-bottom: 2rem;
+  }
+  .week1 {
+    margin-top: 1rem;
+  }
+  .additional {
+    margin: 2rem 0;
+  }
+}

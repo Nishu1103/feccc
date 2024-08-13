@@ -28,7 +28,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="social" data-aos="fade-left" data-aos-offset="150" style={{height:"200px"}}>
-          <div>
+          <div className="social-handle">
             <h2 className="title">Instagram</h2>
             <div className="logo">
               <a target="_blank" href="https://www.instagram.com/fec_iitkgp/">
@@ -88,7 +88,7 @@ const Contact = () => {
               </a>
             </div>
           </div>
-          <div>
+          <div className="social-handle">
             <h2 className="title">LinkedIn</h2>
             <div className="logo">
               <a

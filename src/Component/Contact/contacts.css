@@ -52,11 +52,19 @@
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
   }
   
+  .social-handle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 1000px;
+  }
+
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 3rem 0;
     transition: transform 0.1s;
   }
   

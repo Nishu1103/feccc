@@ -7,8 +7,8 @@ export default function  LandingPage () {
   // const vantaRef = useRef(null);
   const [letterClass, setLetters] = useState('text-animate')
   const FArray = ['F', 'i', 'n', 'a', 'n', 'c', 'e', ' ']
-  const AArray = ['a', 'n', 'd']
-  const EArray = [' ', 'E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
+  const AArray = ['a', 'n', 'd',' ']
+  const EArray = ['E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
 
   const placeArray = ['I', 'I', 'T', ' ', 'K', 'H', 'A', 'R', 'A', 'G', 'P', 'U', 'R']
 
@@ -28,8 +28,9 @@ export default function  LandingPage () {
     <section >
       <div id="main">
         <section id="left">
-          <div className="heading">
+        <div className="heading">
             <h1 style={{ fontSize: '35px', fontWeight: '700' }}>
+              <span className="first">
               <span>
                 <Animatedletters
                   letterClass={letterClass}
@@ -42,12 +43,13 @@ export default function  LandingPage () {
                 strArray={AArray}
                 idx={23}
               /></span>
+              </span>
               <span><Animatedletters
                 letterClass={letterClass}
                 strArray={EArray}
-                idx={26}
-              /></span>
-              <br />
+                idx={27}
+              /><br /></span>
+              
               <span style={{ color: '#63BB54' }}>
                 <Animatedletters
                   letterClass={letterClass}
@@ -66,8 +68,8 @@ export default function  LandingPage () {
             // style={{ fontSize: '25px', fontWeight: 800, fontFamily: 'Manrope' }} */}
           </div>
           <div className="note">
-            <p style={{ fontSize: '18px', textAlign: 'justify', fontWeight: 800 }}>
-              The Finance and Economics Club (FEC) functions as a platform for enthusiastic students to come together and learn the intriguing and fun world of finance, by organizing introductory sessions for people who are interested in finance but do not have any prior knowledge, through inviting Industry Leaders and alumni
+          <p style={{  textAlign: 'justify', fontWeight: 800 }}>
+              The Finance and Economics Club (FEC) functions as a platform for enthusiastic students to come together and learn the intriguing and fun world of finance, by organizing introductory sessions for people who are interested in finance but do not have any prior knowledge...
               <br /><br />
             </p>
           </div>

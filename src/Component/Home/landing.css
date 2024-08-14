@@ -174,11 +174,14 @@ p {
       #main #left{
         max-width: 100% !important; 
         text-align: center;
+        padding-top: 0 !important;
       }
       #main #left h1{
         /* display: none; */
         font-size: 25px;
-        font-weight: 400;
+        font-weight: 500;
+        display: flex;
+        flex-direction: column;
       }
       #main-content{
         display: block !important;

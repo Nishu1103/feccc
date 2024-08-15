@@ -1,21 +1,102 @@
-import "./landing.css"
-const Landingpage= () => {
+import  { useEffect,   useState } from "react";
+import "./landing.css";
+import Animatedletters from "./Animetedlatter";
+import Typewriter from "./typewriter";
+
+export default function  LandingPage () {
+  // const vantaRef = useRef(null);
+  const [letterClass, setLetters] = useState('text-animate')
+  const FArray = ['F', 'i', 'n', 'a', 'n', 'c', 'e', ' ']
+  const AArray = ['a', 'n', 'd',' ']
+  const EArray = ['E', 'c', 'o', 'n', 'o', 'm', 'i', 'c', 's', ' ', 'C', 'l', 'u', 'b']
+
+  const placeArray = ['I', 'I', 'T', ' ', 'K', 'H', 'A', 'R', 'A', 'G', 'P', 'U', 'R']
+
+  
+
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setLetters('text-animate-hover')
+    }, 4000)
+
+    return () => {
+      clearTimeout(timeoutId)
+    }
+  }, [])
+
   return (
-      <div className="landing-container">
-        <div className="texts">
-          <h1 className="title-texts">Finance and Economics Club</h1>
-          <h1 className="title-texts">IIT KHARAGPUR</h1>
-          <a href="./register" className="buttonnn" target="_blank" rel="noopener noreferrer" style={{width:"200px", height:"50px",backgroundColor:"#175996",
-            color:"white",borderRadius:"10px",padding:"10px", font:"bold"
-          }}> register to coming event </a>
-          
-        </div>
- 
+    <section >
+      <div id="main">
+        <section id="left">
+        <div className="heading">
+            <h1 style={{ fontSize: '35px', fontWeight: '700' }}>
+              <span className="first">
+              <span>
+                <Animatedletters
+                  letterClass={letterClass}
+                  strArray={FArray}
+                  idx={15}
+                />
+              </span>
+              <span style={{ fontWeight: '400' }}><Animatedletters
+                letterClass={letterClass}
+                strArray={AArray}
+                idx={23}
+              /></span>
+              </span>
+              <span><Animatedletters
+                letterClass={letterClass}
+                strArray={EArray}
+                idx={27}
+              /><br /></span>
+              
+              <span style={{ color: '#63BB54' }}>
+                <Animatedletters
+                  letterClass={letterClass}
+                  strArray={placeArray}
+                  idx={42}
+                />
+              </span>
+            </h1>
+          </div>
+          <br />
+          <div>
+            <Typewriter textArray={['Be an asset to everyone...', 'Not a liability !!!']} period={1000} />
+            {/* // className="typewriter link-light"
+            // data-period="4000"
+            // data-type='[ "Be an asset to everyone", "Not a liability !!!"]'
+            // style={{ fontSize: '25px', fontWeight: 800, fontFamily: 'Manrope' }} */}
+          </div>
+          <div className="note">
+          <p style={{  textAlign: 'justify', fontWeight: 800 }}>
+              The Finance and Economics Club (FEC) functions as a platform for enthusiastic students to come together and learn the intriguing and fun world of finance, by organizing introductory sessions for people who are interested in finance but do not have any prior knowledge...
+              <br /><br />
+            </p>
+          </div>
+
+          <br />
+          <a
+            href="/register"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              marginLeft: '0%',
+              padding: '2% 5%',
+              color: '#63BB54',
+              border: '#f1dc8d',
+              borderRadius: '10px',
+              borderStyle: 'solid'
+            }}
+          >
+            Register for Future Events Here
+          </a>
+        </section>
+        <section id="right" >
+          <img src="images/logo.png" alt="Main Right" style={{ maxWidth: '100%' }} />
+        </section>
       </div>
+    </section>
   );
-};
+}
 
-
-
-export default Landingpage;
-
+// export default LandingPage;

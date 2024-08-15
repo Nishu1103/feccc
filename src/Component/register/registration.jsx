@@ -1,18 +1,16 @@
-import   { useState } from 'react';
-import axios from 'axios';
-import "./registration";
-
-const API_KEY = 'AIzaSyBH-f3GTKxqA0a2_seVBN67tOxHrhejClU';
-const SPREADSHEET_ID = '1uJuNGLLjpK4vALR613nVUIkm1Qdmu7767SmWB30UN2w';
-const RANGE = 'Sheet1!A1:D1'; // Adjust according to your sheet structure
+import React, { useState } from 'react';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css'; // Import the CSS for toast notifications
+import './registration.css'; // Import the CSS file for custom styles
 
 const Registration = () => {
   const [formData, setFormData] = useState({
+    id: '',
     name: '',
     email: '',
-    message: '',
+    phone: '',
   });
-
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e) => {
     setFormData({
@@ -21,45 +19,60 @@ const Registration = () => {
     });
   };
 
-
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const values = [
-      [formData.name, formData.email, formData.message], // This should match the structure of your Google Sheet
-    ];
+    if (isSubmitting) return; // Prevent multiple submissions
 
-    const body = {
-      values,
-    };
+    setIsSubmitting(true);
 
-    axios.post(
-      `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${RANGE}:append?valueInputOption=RAW&key=${API_KEY}`,
-      {
-        values: [["Data1", "Data2", "Data3"]], // Replace with your actual data
+    try {
+      const response = await fetch("https://sheet.best/api/sheets/56b2780e-1017-41db-8531-eca120703ecb", {
+        method: "POST",
+        mode: "cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        toast.success('Form submitted successfully!');
+        setFormData({ id: '', name: '', email: '', phone: '' }); // Clear the form
+        console.log('Response:', result);
+      } else {
+        throw new Error('Submission failed');
       }
-    )
-    .then(response => {
-      console.log('Data appended successfully:', response.data);
-    })
-    .catch(error => {
-      console.error('Error appending data:', error);
-    });
-    
+    } catch (error) {
+      toast.error('Error submitting form. Please try again.');
+      console.error('Error:', error);
+    } finally {
+      setTimeout(() => {
+        setIsSubmitting(false);
+      }, 5000); // 5-second delay before re-enabling the submit button
+    }
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      height: '100vh',
-      
-    }}>
-      <h1>Submit Data to Google Sheets</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
+    <div className="formbhardo">
+
+
+  
+    <div className="form-container">
+      <h1 className="form-title">Registration Form</h1>
+      <form onSubmit={handleSubmit} className="registration-form">
+        <div className="form-group">
+          <label>ID:</label>
+          <input
+            type="text"
+            name="id"
+            value={formData.id}
+            onChange={handleChange}
+            required
+          />
+        </div>
+        <div className="form-group">
           <label>Name:</label>
           <input
             type="text"
@@ -69,7 +82,7 @@ const Registration = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
@@ -79,25 +92,28 @@ const Registration = () => {
             required
           />
         </div>
-        <div>
-          <label>Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
+        <div className="form-group">
+          <label>Phone Number:</label>
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
             onChange={handleChange}
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button
+          type="submit"
+          className="submit-button"
+          disabled={isSubmitting} // Disable the button while submitting
+        >
+          {isSubmitting ? 'Submitting...' : 'Submit'}
+        </button>
       </form>
+      <ToastContainer />
+    </div>
     </div>
   );
 };
 
-// export default FormSubmit;
-
 export default Registration;
-
-
-//// AKfycbybDm0y4t4DzPE4UZ4fmoJeJzpBDyro9zPhTTIC_Z-5889G-i4TQ6c2Nlu7u3F34D3O deployment id
-///     const Sheet_Url="https://script.google.com/macros/s/AKfycbybDm0y4t4DzPE4UZ4fmoJeJzpBDyro9zPhTTIC_Z-5889G-i4TQ6c2Nlu7u3F34D3O/exec"
